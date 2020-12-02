@@ -4,7 +4,7 @@
 LED_Matrix화면과 컴퓨터화면으로 팩맨을 플레이한다. 
 
 ## 게임 프로그램 설치
-github홈페이지에서 pacman_matrix 소스코드 다운로드
+github홈페이지에서 pacman_final 폴더에 있는 소스코드 다운로드
 
 pygame 설치
 $ sudo pip3 install pygame
