@@ -6,9 +6,6 @@ LED_Matrix화면과 컴퓨터화면으로 팩맨을 플레이한다.
 ## 게임 프로그램 설치
 github홈페이지에서 Final_pacman 폴더에 있는 소스코드 다운로드
 
-pygame 설치
-$ sudo pip3 install pygame
-
 ## 사용법
 게임 모드. 
 게임 모드는 1P모드를 제공한다. 게임 시작 후 팩맨 맵이 출력되면서 게임이 시작된다. 
