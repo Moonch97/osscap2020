@@ -255,28 +255,51 @@ while True:
         tempGho2 = iScreen.clip(top_G2, left_G2, top_G2+currGho2.get_dy(), left_G2+currGho2.get_dx())
         tempGho2 = tempGho2 + currGho2
 
-#         if p == 1:
-#             left_G3 -= 1
-#         elif p == 2:
-#             left_G3 += 1
-#         elif p == 3:
-#             top_G3 += 1
-#         elif i == 4:
-#             top_G -= 1
-#         tempGho = iScreen.clip(top_G, left_G, top_G+currGho.get_dy(), left_G+currGho.get_dx())
-#         tempGho = tempGho + currGho
-#         if tempGho.anyGreaterThan(3):
-#             if i == 1:
-#                 left_G += 1
-#             if i == 2:
-#                 left_G -= 1
-#             if i == 3:
-#                 top_G -= 1
-#             if i == 4:
-#                 top_G += 1
-#         tempGho = iScreen.clip(top_G, left_G, top_G+currGho.get_dy(), left_G+currGho.get_dx())
-#         tempGho = tempGho + currGho
-#         tap = 0
+        if p == 1:
+            left_G3 -= 1
+        elif p == 2:
+            left_G3 += 1
+        elif p == 3:
+            top_G3 += 1
+        elif p == 4:
+            top_G3 -= 1
+        tempGho3 = iScreen.clip(top_G3, left_G3, top_G3+currGho3.get_dy(), left_G3+currGho3.get_dx())
+        tempGho3 = tempGho3 + currGho3
+        if tempGho3.anyGreaterThan(3):
+            if p == 1:
+                left_G3 += 1
+            if p == 2:
+                left_G3 -= 1
+            if p == 3:
+                top_G3 -= 1
+            if p == 4:
+                top_G3 += 1
+        tempGho3 = iScreen.clip(top_G3, left_G3, top_G3+currGho3.get_dy(), left_G3+currGho3.get_dx())
+        tempGho3 = tempGho3 + currGho3
+        
+        if q == 1:
+            left_G4 -= 1
+        elif q == 2:
+            left_G4 += 1
+        elif q == 3:
+            top_G4 += 1
+        elif q == 4:
+            top_G4 -= 1
+        tempGho4 = iScreen.clip(top_G4, left_G4, top_G4+currGho4.get_dy(), left_G4+currGho4.get_dx())
+        tempGho4 = tempGho4 + currGho4
+        if tempGho4.anyGreaterThan(3):
+            if q == 1:
+                left_G4 += 1
+            if q == 2:
+                left_G4 -= 1
+            if q == 3:
+                top_G4 -= 1
+            if q == 4:
+                top_G4 += 1
+        tempGho4 = iScreen.clip(top_G4, left_G4, top_G4+currGho4.get_dy(), left_G4+currGho4.get_dx())
+        tempGho4 = tempGho4 + currGho4
+        
+        tap = 0
 
 
     score += 1
@@ -284,5 +307,7 @@ while True:
     oScreen.paste(tempBlk, top, left)
     oScreen.paste(tempGho, top_G, left_G)
     oScreen.paste(tempGho2, top_G2, left_G2)
+    oScreen.paste(tempGho3, top_G3, left_G3)
+    oScreen.paste(tempGho4, top_G4, left_G4)
     draw_matrix(oScreen); print()
     
